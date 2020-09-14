@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    background-color: #fff;
+    color: #333333;
+}
+
+/* Formulaires */
+form {
+    padding: 2.5%;
+    margin: 0 auto;
+    max-width: 450px;
+    background-color: #f4f4f4;
+}
+
+form :first-child {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+form > ul {
+    padding: 0;
+}
+
+form > ul > li {
+    list-style-type: none;
+    margin-bottom: 1em;
+}
+
+form label {
+    display: block;
+    margin-bottom: .2em;
+    cursor: pointer;
+}
+
+form input,
+form textarea {
+    font-family: inherit; /* Force héritage de la police */
+    font-size: inherit;
+    width: 100%;
+}
+
+form textarea {
+    height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+    resize: vertical;
+}
