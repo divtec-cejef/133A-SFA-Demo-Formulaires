@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    background: #ffffff;
+    color: #333333;
+}
+
+/* Formulaire */
+form {
+    max-width: 450px;
+    background-color: #f4f4f4;
+    margin: 3rem auto;
+    padding: 2.5%;
+}
+
+form > ul {
+    padding: 0;
+}
+
+form > ul > li {
+    list-style-type: none;
+    margin-bottom: 1em;
+}
+
+form label {
+    display: block;
+    margin-bottom: .2em ;
+    cursor: pointer;
+    /*font-weight: 700;*/
+}
+
+form input,
+form textarea {
+    font-family: inherit; /* Force héritage de la famille */
+    font-size: inherit;
+    color: #000000;
+    padding: .5em;
+    width: 100%;
+}
+
+form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    resize: vertical;
+}
+
+/* Boutons du site */
+button {
+    font-family: inherit; /* Force héritage de la famille */
+    font-size: inherit;
+    color: #ffffff;
+    background-color: #599a68;
+    border: none;
+    padding: 1em 2em;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
