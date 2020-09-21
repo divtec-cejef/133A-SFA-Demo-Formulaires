@@ -54,7 +54,14 @@ form input[type="radio"] {
 
 form input[type="checkbox"] + label,
 form input[type="radio"] + label {
-    display: inline;
+    display: inline-block;
+    padding: .3em 0;
+    color: #777;
+}
+
+form input[type="checkbox"]:checked + label,
+form input[type="radio"]:checked + label {
+    color: #333333;
 }
 
 form textarea {
