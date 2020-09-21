@@ -58,18 +58,18 @@ form select {
     padding: .5em;
 }
 form input:focus,
-textarea:focus {
+form textarea:focus {
     box-shadow: 0 0 1.5px 1px deepskyblue;
 }
 
 form input:invalid,
-textarea:invalid {
+form textarea:invalid {
     border-right: darkred solid 3px;
     box-shadow: none;
 }
 
 form input:valid,
-textarea:valid {
+form textarea:valid {
     border-right: greenyellow solid 3px;
 }
 
