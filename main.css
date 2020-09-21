@@ -41,6 +41,13 @@ form label {
     cursor: pointer;
 }
 
+form label span,
+form legend span {
+    font-weight: bold;
+    color: darkred;
+}
+
+
 form input,
 form textarea,
 form select {
@@ -75,8 +82,6 @@ form input[type="checkbox"]:checked + label,
 form input[type="radio"]:checked + label {
     color: #333333;
 }
-
-
 
 button {
     font-family: inherit; /* Force héritage de la police */
