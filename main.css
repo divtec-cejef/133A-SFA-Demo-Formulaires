@@ -13,6 +13,16 @@ body {
     color: #333333;
 }
 
+/* Liens */
+a {
+    text-decoration: none;
+    color: #6ab47b;
+}
+
+a:hover {
+    color: #599a68;
+}
+
 /* Formulaire */
 form {
     max-width: 450px;
@@ -20,6 +30,12 @@ form {
     margin: 3rem auto;
     padding: 2.5%;
 }
+
+form :focus {
+    border: greenyellow solid 2px;
+}
+
+
 
 form > ul {
     padding: 0;
@@ -69,6 +85,18 @@ form textarea {
     max-width: 100%;
     min-width: 100%;
     resize: vertical;
+}
+
+form input:invalid {
+    box-shadow: 0 0 1.5px 1px darkred;
+}
+
+form input:valid {
+    box-shadow: 0 0 1.5px 1px darkgreen;
+}
+
+form button + a {
+    margin-left: 1.5em;
 }
 
 /* Boutons du site */

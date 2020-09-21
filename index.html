@@ -11,7 +11,7 @@
     <h1>Formulaire d'inscription</h1>
     <ul>
         <li>
-            <label for="nom">Nom de famille</label>
+            <label for="nom">Nom de famille <span>*</span></label>
             <input type="text" name="nom" id="nom"
                    placeholder="Votre nom"
                    required
@@ -55,7 +55,7 @@
         </li>
         <li>
             <label for="destination">
-                Sélectionnez votre destination<span>*</span>
+                Sélectionnez votre destination <span>*</span>
             </label>
             <select required name="destination" id="destination">
                 <option value="" selected>-- Choisir un pays --</option>
@@ -95,6 +95,7 @@
             <!-- <input type="submit"> -->
             <!-- <button type="reset">Reset</button> -->
             <button type="submit">Envoyer</button>
+            <a href="#">Annuler</a>
         </li>
     </ul>
 </form>
