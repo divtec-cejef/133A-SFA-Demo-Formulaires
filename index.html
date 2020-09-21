@@ -11,12 +11,12 @@
         <h1>Formulaire d'inscription</h1>
         <ul>
             <li>
-                <label for="nom">Nom de famille</label>
-                <input type="text" id="nom" name="nom">
+                <label for="nom">Nom de famille <span>*</span></label>
+                <input autofocus required type="text" id="nom" name="nom">
             </li>
             <li>
-                <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" name="prenom">
+                <label for="prenom">Prénom <span>*</span></label>
+                <input required type="text" id="prenom" name="prenom">
             </li>
             <li>
                 <label for="email">E-mail</label>
@@ -26,6 +26,53 @@
                 <label for="message">Votre message</label>
                 <textarea name="message" id="message"
                           cols="50" rows="10"></textarea>
+            </li>
+            <li>
+                <input type="checkbox" name="copie" id="copie">
+                <label for="copie">Je veux recevoir une copie du message</label>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Sélectionnez votre pays d'origine <span>*</span></legend>
+                    <div>
+                        <input required
+                               type="radio"
+                               name="pays"
+                               id="pays-fr"
+                               value="fr"
+                        >
+                        <label for="pays-fr">France</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="pays" id="pays-it" value="it">
+                        <label for="pays-it">Italie</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="pays" id="pays-ch" value="ch">
+                        <label for="pays-ch">Suisse</label>
+                    </div>
+                </fieldset>
+            </li>
+            <li>
+                <label for="destination">
+                    Sélectionner votre destination favorite
+                    <span>*</span>
+                </label>
+                <select required name="destination" id="destination">
+                    <option value="">-- Sélectionnez une destination --</option>
+                    <optgroup label="Europe">
+                        <option value="fr">France</option>
+                        <option value="it">Italie</option>
+                        <option value="ch">Suisse</option>
+                    </optgroup>
+                    <optgroup label="Amérique">
+                        <option value="br">Brésil</option>
+                        <option value="ca">Canada</option>
+                        <option value="us">Etats-Unis</option>
+                    </optgroup>
+
+                </select>
+
             </li>
             <li>
                 <!-- <input type="submit"> -->

@@ -42,7 +42,8 @@ form label {
 }
 
 form input,
-form textarea {
+form textarea,
+form select {
     font-family: inherit; /* Force héritage de la police */
     font-size: inherit;
     color: #000000;
@@ -57,7 +58,22 @@ form textarea {
     resize: vertical;
 }
 
+form input[type="checkbox"],
+form input[type="radio"] {
+    width: auto;
+    cursor: pointer;
+}
+
+form input[type="checkbox"] + label,
+form input[type="radio"] + label {
+    display: inline;
+}
+
+
+
 button {
+    font-family: inherit; /* Force héritage de la police */
+    font-size: inherit;
     color: white;
     background-color: #599a68;
     padding: 1em 2em;
