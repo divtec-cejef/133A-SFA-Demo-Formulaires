@@ -38,7 +38,8 @@ form label {
 }
 
 form input,
-form textarea {
+form textarea,
+form select {
     font-family: inherit; /* Force héritage de la famille */
     font-size: inherit;
     color: #000000;
