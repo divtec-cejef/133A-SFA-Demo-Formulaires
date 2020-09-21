@@ -13,6 +13,15 @@ body {
     color: #333333;
 }
 
+a {
+    text-decoration: none;
+    color: #6ab47b;
+}
+
+a:hover {
+    color: #599a68;
+}
+
 /* Formulaires */
 form {
     padding: 2.5%;
@@ -104,6 +113,7 @@ button {
     color: white;
     background-color: #599a68;
     padding: 1em 2em;
+    margin-right: 1em;
     border: 0;
     cursor: pointer;
     transition: all .3s ease;
