@@ -46,6 +46,17 @@ form textarea {
     width: 100%;
 }
 
+form input[type="checkbox"],
+form input[type="radio"] {
+    width: auto;
+    cursor: pointer;
+}
+
+form input[type="checkbox"] + label,
+form input[type="radio"] + label {
+    display: inline;
+}
+
 form textarea {
     max-width: 100%;
     min-width: 100%;
